@@ -36,10 +36,10 @@
 </p>
 
 <p>
-  <image src="<%= @product.image %>">
+ <image src="<%= @product.image %>"> 
+ <%= image_tag @product.image.url
+</p>
 
-</p>
-</p>
 
 <%= link_to 'Edit', edit_product_path(@product) %> |
 <%= link_to 'Back', products_path %>
