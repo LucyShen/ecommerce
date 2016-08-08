@@ -9,6 +9,7 @@ Rails.application.routes.draw do
 
   root 'storefront#all_items'
   
+  get 'categorical' => 'storefront#items_by_category'
   resources :categories
   resources :products
   # The priority is based upon order of creation: first created -> highest priority.
